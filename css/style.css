@@ -1,0 +1,291 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*home-page (dit doe ik om meer overzicht te krijgen op css)*/
+
+body {
+    background-color: #4d0000;
+    color: #f2f2f2;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header {
+    background-color: black;
+    color: #f2f2f2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a {
+    color: #f2f2f2;
+    background-color: #4d0000;
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav li {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.hnc {
+    width: 45vh;
+    padding: 2em;
+    margin: 2em;
+    animation: fadeIn 2s 2 forwards;
+}
+
+.hncl {
+    width: 15vh;
+    padding: 1em;
+    margin: 0.75em;
+}
+
+a {
+    padding: 1em;
+    margin: 1em;
+    color: #f2f2f2;
+    transition: background-color 0.5s;
+}
+
+a:hover {
+    background-color: black;
+}
+
+a:focus {
+    background-color: #f2f2f2;
+    color: black;
+}
+
+.section1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.h12 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: justify;
+    animation: slideIn 2s 1 forwards;
+    margin: 2em;
+    padding: 2em;
+    border: 5px solid black;
+    border-radius: 10px;
+}
+
+.h12 p {
+    padding: 1em;
+    margin: 1em;
+}
+
+.teaser {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4em;
+    margin: 4em;
+    gap: 3em;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+
+}
+
+video {
+    width: 50vw;
+    height: 50vh;
+}
+
+/*about-us*/
+
+.section2 {
+    display: flex;
+    text-align: justify;
+    border: 5px solid black;
+    border-radius: 10px;
+    margin: 10em;
+    margin-bottom: 15em;
+}
+
+.aan {
+    width: 25vw;
+    padding: 1em;
+    margin: 1em;
+}
+
+h1 {
+    padding: 1em;
+    margin: 1em;
+    text-align: center;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.about-us {
+    margin: 1em;
+    padding: 1em;
+}
+
+.section3 {
+    margin: 2em;
+    padding-bottom: 15em;
+    padding-top: 5em;
+    display: flex;
+    justify-content: space-around;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+}
+
+.about-us2 {
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    gap: 2em;
+}
+
+.para {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+}
+
+main h2 {
+    border: 1rem solid black;
+    border-radius: 10px;
+    background-color: black;
+    color: #f2f2f2;
+    text-align: center;
+    margin: 3em;
+    padding: 2em;
+}
+
+/*episodes*/
+
+h4 {
+    background-color: black;
+    border: 1px solid #f2f2f2;
+    border-radius: 10px;
+    padding: 1em;
+    margin: 0.5em;
+    text-align: center;
+    transition: background-color 0.5s;
+}
+
+.holmes:hover {
+    background-color: #4d0000;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.section4 {
+    margin: 3em;
+    margin-bottom: 10em;
+    padding: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+}
+
+.section4 img {
+    width: 25vw;
+    gap: 2em;
+}
+
+.episode1 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2em;
+    border: 5px solid black;
+    border-radius: 10px;
+    padding: 2em;
+    text-align: center;
+    margin-bottom: 7em;
+}
+
+/*hh holmes*/
+
+.section5 {
+    display: flex;
+    text-align: center;
+    border: 5px solid black;
+    border-radius: 10px;
+    margin: 10em;
+    margin-bottom: 15em;
+}
+
+.ul {
+    text-align: left;
+    padding-top: 3em;
+}
+
+.hhh {
+    width: 25vw;
+    padding: 1em;
+    margin: 1em;
+}
+
+.holmes1 {
+    margin: 1em;
+    padding: 1em;
+}
+
+.section6 {
+    text-align: justify;
+}
+
+.section6 p {
+    display: flex;
+    justify-content: center;
+    margin: 5em;
+}
+
+.hotels {
+    height: 40vh;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 10em;
+}
+
+/*footer*/
+
+footer {
+    background-color: black;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer div {
+    padding: 3em;
+    margin: 3em;
+    text-align: justify;
+}
